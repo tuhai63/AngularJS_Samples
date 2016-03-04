@@ -1,0 +1,66 @@
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\ApplicationInsights.config
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\roslyn\csc.exe
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\roslyn\System.Collections.Immutable.dll
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\roslyn\vbc.exe
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\roslyn\VBCSCompiler.exe
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\roslyn\VBCSCompiler.exe.config
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\UIRouterSample_3.dll.config
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\UIRouterSample_3.dll
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\UIRouterSample_3.pdb
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.Web.dll
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.WindowsServer.dll
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.ApplicationInsights.dll
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.Web.xml
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.WindowsServer.xml
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.ApplicationInsights.xml
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\obj\Debug\UIRouterSample_3.dll
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\obj\Debug\UIRouterSample_3.pdb
+c:\users\dang khoa\documents\visual studio 2015\Projects\UIRouterSample_3\UIRouterSample_3\obj\Debug\UIRouterSample_3.csprojResolveAssemblyReference.cache
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\ApplicationInsights.config
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\roslyn\csc.exe
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\roslyn\System.Collections.Immutable.dll
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\roslyn\System.Reflection.Metadata.dll
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\roslyn\vbc.exe
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\roslyn\VBCSCompiler.exe
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\roslyn\VBCSCompiler.exe.config
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\UIRouterSample_3.dll.config
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\UIRouterSample_3.dll
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\UIRouterSample_3.pdb
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.Agent.Intercept.dll
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.DependencyCollector.dll
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.Web.dll
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.WindowsServer.dll
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.ApplicationInsights.dll
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.DependencyCollector.xml
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.Web.xml
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.AI.WindowsServer.xml
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.ApplicationInsights.xml
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\obj\Debug\UIRouterSample_3.csprojResolveAssemblyReference.cache
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\obj\Debug\UIRouterSample_3.dll
+C:\dev2\UIRouterSample_3\UIRouterSample_3\UIRouterSample_3\obj\Debug\UIRouterSample_3.pdb
