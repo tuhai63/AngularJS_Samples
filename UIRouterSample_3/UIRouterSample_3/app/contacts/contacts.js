@@ -192,13 +192,17 @@ angular.module('uiRouterSample.contacts', [
             // inserted with this state's template.
             '@contacts.detail': {
               templateUrl: 'app/contacts/contacts.detail.item.edit.html',
-              controller: ['$scope', '$stateParams', '$state', 'utils',
-                function (  $scope,   $stateParams,   $state,   utils) {
-                  $scope.item = utils.findById($scope.contact.items, $stateParams.itemId);
-                  $scope.done = function () {
-                    // Go back up. '^' means up one. '^.^' would be up twice, to the grandparent.
-                    $state.go('^', $stateParams);
-                  };
+              controller: ['$scope', '$stateParams', '$state', 'utils', 'CheckStateChangeService',
+                function ($scope, $stateParams, $state, utils, CheckStateChangeService) {
+                    $scope.item = utils.findById($scope.contact.items, $stateParams.itemId);
+                    console.debug("I am in");
+                    CheckStateChangeService.checkFormOnStateChange($scope);
+
+                    $scope.done = function () {
+                        // Go back up. '^' means up one. '^.^' would be up twice, to the grandparent.
+                        console.debug($scope.item.value);
+                        $state.go('^', $stateParams);
+                    };
                 }]
             }
           }
