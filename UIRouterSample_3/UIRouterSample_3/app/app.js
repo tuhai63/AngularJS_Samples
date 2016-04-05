@@ -4,7 +4,8 @@ angular.module('uiRouterSample', [
   'uiRouterSample.contacts.service',
   'uiRouterSample.utils.service',
   'ui.router', 
-  'ngAnimate'
+  'ngAnimate',
+  'ui.bootstrap'
 ])
 
 .run(

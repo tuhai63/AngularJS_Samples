@@ -78,6 +78,13 @@ angular.module('uiRouterSample.contacts', [
           templateUrl: 'app/contacts/contacts.list.html'
         })
 
+          .state('contacts.list2', {
+ 
+              url: '',
+
+              templateUrl: 'app/contacts/contacts.list2.html'
+          })
+
         ///////////////////////
         // Contacts > Detail //
         ///////////////////////
@@ -192,11 +199,41 @@ angular.module('uiRouterSample.contacts', [
             // inserted with this state's template.
             '@contacts.detail': {
               templateUrl: 'app/contacts/contacts.detail.item.edit.html',
-              controller: ['$scope', '$stateParams', '$state', 'utils', 'CheckStateChangeService',
-                function ($scope, $stateParams, $state, utils, CheckStateChangeService) {
+              controller: ['$scope', '$stateParams', '$state', 'utils', 'CheckStateChangeService', 'modalService',
+                function ($scope, $stateParams, $state, utils, CheckStateChangeService, modalService) {
                     $scope.item = utils.findById($scope.contact.items, $stateParams.itemId);
                     console.debug("I am in");
-                    CheckStateChangeService.checkFormOnStateChange($scope);
+                    //CheckStateChangeService.checkFormOnStateChange($scope);
+
+                    var removeListener = $scope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+                        //$pristine: It will be TRUE, if the user has not interacted with the form yet
+                        if ($scope.form.$pristine) {
+                            return;
+                        }
+
+                         //var canContinue = confirm("The form has change, do you want to continue without saving");
+                         //if (canContinue) {                
+                         //    return;
+                         //}
+                        var modalOptions = {
+                            closeButtonText: 'Cancel',
+                            actionButtonText: 'Ignore Changes',
+                            headerText: 'Unsaved Changes',
+                            bodyText: 'You have unsaved changes. Leave the page?'
+                        };
+                        modalService.showModal({}, modalOptions).then(function (result) {
+                            if (result === 'ok') {
+                                console.debug(fromState);
+                                console.debug(toState);
+                                console.debug($stateParams);
+                                return;
+                            }
+                        });
+
+                        event.preventDefault();
+                    });
+
+                    $scope.$on("$destroy", removeListener);
 
                     $scope.done = function () {
                         // Go back up. '^' means up one. '^.^' would be up twice, to the grandparent.

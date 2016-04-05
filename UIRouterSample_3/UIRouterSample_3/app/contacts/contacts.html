@@ -3,6 +3,7 @@
     <div class="pa-sidebar well well-small">
       <ul class="nav nav-list">
         <li ng-class="{ active: $state.includes('contacts.list') }"><a ui-sref="contacts.list">All Contacts</a></li>
+        <li ng-class="{ active: $state.includes('contacts.list2') }"><a ui-sref="contacts.list2">Contacts List</a></li>
         <li class="nav-header">Top Contacts</li>
 
         <!-- This <li> will only add the 'active' class if 'contacts.detail' or its descendants are active
@@ -12,6 +13,7 @@
           <!-- Here's a ui-sref that is also providing necessary parameters -->
           <a ui-sref="contacts.detail({contactId:contact.id})">{{contact.name}}</a>
         </li>
+
       </ul>
       <hr>
       <button class="btn" ng-click="goToRandom()">Show random contact</button>
