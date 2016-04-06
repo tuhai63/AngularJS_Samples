@@ -69,7 +69,7 @@ app.config(function ($stateProvider, $stickyStateProvider, $urlRouterProvider) {
         templateUrl: 'pages/survey.html',
         controller: ['$scope',  'CheckStateChangeService',
                function ($scope,  CheckStateChangeService) { 
-                   console.debug("I am intercepted");
+                  
                    CheckStateChangeService.checkFormOnStateChange($scope);
 
                }]

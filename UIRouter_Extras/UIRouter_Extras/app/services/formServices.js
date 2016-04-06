@@ -8,7 +8,9 @@
         var removeListener = $rootScope.$on('$stateChangeStart'
                     , function (event, toState, toParams, fromState, fromParams) {
                         //$pristine: It will be TRUE, if the user has not interacted with the form yet
-                        if ($scope.form.$pristine) {
+                        $scope.form = {};
+                     
+                        if ($scope.form.$pristine) { 
                             return;
                         }
 
