@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script data-require="angular.js@1.3.16" data-semver="1.3.16" src="https://code.angularjs.org/1.3.16/angular.js"></script>
+    <script data-require="ui-router@0.2.15" data-semver="0.2.15" src="//rawgit.com/angular-ui/ui-router/0.2.15/release/angular-ui-router.js"></script>
+    <script data-require="ui-router-extras@0.0.13" data-semver="0.0.13" src="https://rawgit.com/christopherthielen/ui-router-extras/0.0.13/release/ct-ui-router-extras.js"></script>
+    <script data-require="angular-animate@1.3.16" data-semver="1.3.16" src="https://code.angularjs.org/1.3.16/angular-animate.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="statevis.css" />
+    <script src="script.js"></script>
+</head>
+<body ng-app="plunk" style="padding-top: 2em;">
+    <div ui-view="app"></div>
+    <div ui-view="modal" class="modal"></div>
+    <div ui-view="modal2" class="modal"></div>
+    <state-vis style="position:relative; bottom: 0;"></state-vis>
+    <div style="width: 100%; position:fixed; top: 0;">
+        <pre>Browser location: {{$location.absUrl()}}</pre>
+    </div>
+
+
+
+
+
+    <!-- Templates -->
+    <script type="text/ng-template" id="app.html">
+        <div>
+            <a ui-sref="modal">Click for modal 1!</a>
+            <a ui-sref="modal2">Click for modal 2</a>
+            <h3>Welcome to the app</h3>
+            <a ui-sref=".account" ui-sref-active="selected">Account</a>
+            <a ui-sref=".survey" ui-sref-active="selected">Survey</a>
+        </div>
+        <div ui-view></div>
+    </script>
+
+
+    <script type="text/ng-template" id="account.html">
+        <h1>Account</h1>
+        <a ui-sref=".stuff">My Stuff</a>
+        <a ui-sref=".things">My Things</a>
+        <div ui-view></div>
+    </script>
+
+
+    <!--<script type="text/ng-template" id="modal.html">
+        <div class="modal-overlay fade">
+            <div class="modal-content">
+                <h2>Modal</h2>
+                This modal has a substate.  <a ui-sref=".substate">Activate it</a>
+                <div ui-view></div>
+                <a ui-sref="app">Back to the app...</a>
+            </div>
+        </div>
+    </script>-->
+
+    <!--<script type="text/ng-template" id="survey.html">
+        <h3>Take this survey</h3>
+        How do you like your stuff?
+        <br>
+        <textarea rows="5" cols="55"></textarea>
+
+        <br>
+
+        How do you like your things?
+        <br>
+        <textarea rows="5" cols="55"></textarea>
+    </script>-->
+</body>
+</html>

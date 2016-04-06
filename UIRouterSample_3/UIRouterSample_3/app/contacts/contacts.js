@@ -226,11 +226,15 @@ angular.module('uiRouterSample.contacts', [
                                 console.debug(fromState);
                                 console.debug(toState);
                                 console.debug($stateParams);
+                                //$state.go('contacts.detail'); // test only
+                                //$state.transitionTo("about");
+                                
                                 return;
-                            }
+                            } 
                         });
 
                         event.preventDefault();
+                        $state.go('^.^', $stateParams);
                     });
 
                     $scope.$on("$destroy", removeListener);
