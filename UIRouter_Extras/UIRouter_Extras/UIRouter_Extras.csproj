@@ -80,6 +80,7 @@
     <Content Include="app\pages\modal2.html" />
     <Content Include="app\pages\survey.html" />
     <Content Include="app\script.js" />
+    <Content Include="app\services\formServices.js" />
     <Content Include="app\statevis.css" />
     <Content Include="app\style.css" />
     <Content Include="Web.config" />

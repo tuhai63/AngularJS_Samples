@@ -1,6 +1,6 @@
 ﻿// Code goes here
 
-var app = angular.module("plunk", ['ct.ui.router.extras', 'ngAnimate']);
+var app = angular.module("plunk", ['ct.ui.router.extras', 'ngAnimate', 'plunk.service']);
 
 app.run(function ($state, $rootScope, $location) {
     $rootScope.$state = $state;
@@ -66,7 +66,13 @@ app.config(function ($stateProvider, $stickyStateProvider, $urlRouterProvider) {
 
     $stateProvider.state('app.survey', {
         url: '/survey',
-        templateUrl: 'pages/survey.html'
+        templateUrl: 'pages/survey.html',
+        controller: ['$scope',  'CheckStateChangeService',
+               function ($scope,  CheckStateChangeService) { 
+                   console.debug("I am intercepted");
+                   CheckStateChangeService.checkFormOnStateChange($scope);
+
+               }]
     });
 
 
