@@ -1,6 +1,6 @@
 ﻿// Code goes here
 
-var app = angular.module("plunk", ['ct.ui.router.extras', 'ngAnimate', 'plunk.service']);
+var app = angular.module("plunk", ['ct.ui.router.extras', 'ngAnimate', 'plunk.service', 'ui.bootstrap']);
 
 app.run(function ($state, $rootScope, $location) {
     $rootScope.$state = $state;
@@ -15,6 +15,22 @@ app.config(function ($stateProvider, $stickyStateProvider, $urlRouterProvider) {
         views: {
             'modal': {
                 templateUrl: 'pages/modal.html'
+               // controller: ['$scope', '$stateParams', '$state',  'modalService',
+               //function ($scope, $stateParams, $state, modalService) {
+                  
+               //    var modalOptions = {
+               //        closeButtonText: 'Cancel',
+               //        actionButtonText: 'Ignore Changes',
+               //        headerText: 'Unsaved Changes',
+               //        bodyText: 'You have unsaved changes. Leave the page?'
+               //    };
+
+               //    modalService.showModal({}, modalOptions).then(function (result) {
+               //        if (result === 'ok') {
+               //            return;
+               //        }
+               //    });
+               //}]
             }
         }
     });
@@ -67,15 +83,23 @@ app.config(function ($stateProvider, $stickyStateProvider, $urlRouterProvider) {
     $stateProvider.state('app.survey', {
         url: '/survey',
         templateUrl: 'pages/survey.html',
-        controller: ['$scope',  'CheckStateChangeService',
-               function ($scope,  CheckStateChangeService) { 
+        controller: ['$scope', '$stateParams', '$state', 'CheckStateChangeService',
+               function ($scope,  $stateParams, $state, CheckStateChangeService) { 
                    $scope.feedback = "";
+                   $scope.saved = false;
+                   // Interceptor service
                    CheckStateChangeService.checkFormOnStateChange($scope);
-                   alert($scope.feedback);
+                   
+                   $scope.save = function () {
+                     
+                       $scope.saved = true;
+                        console.debug("$scope.feedback: " + $scope.feedback);
+                          
+                   };              
 
                }]
     });
 
 
-    $stickyStateProvider.enableDebug(true);
+    //$stickyStateProvider.enableDebug(true);
 });
