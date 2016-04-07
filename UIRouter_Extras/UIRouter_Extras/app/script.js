@@ -69,8 +69,9 @@ app.config(function ($stateProvider, $stickyStateProvider, $urlRouterProvider) {
         templateUrl: 'pages/survey.html',
         controller: ['$scope',  'CheckStateChangeService',
                function ($scope,  CheckStateChangeService) { 
-                  
+                   $scope.feedback = "";
                    CheckStateChangeService.checkFormOnStateChange($scope);
+                   alert($scope.feedback);
 
                }]
     });
