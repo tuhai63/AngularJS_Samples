@@ -9,28 +9,28 @@ app.run(function ($state, $rootScope, $location) {
 
 app.config(function ($stateProvider, $stickyStateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/");
-
+    // This for generic modal popup
     $stateProvider.state('modal', {
         url: '/modal',
         views: {
             'modal': {
-                templateUrl: 'pages/modal.html'
-               // controller: ['$scope', '$stateParams', '$state',  'modalService',
-               //function ($scope, $stateParams, $state, modalService) {
+                templateUrl: 'pages/modal.html',
+                controller: ['$scope', '$stateParams', '$state',  'modalService',
+               function ($scope, $stateParams, $state, modalService) {
                   
-               //    var modalOptions = {
-               //        closeButtonText: 'Cancel',
-               //        actionButtonText: 'Ignore Changes',
-               //        headerText: 'Unsaved Changes',
-               //        bodyText: 'You have unsaved changes. Leave the page?'
-               //    };
+                   var modalOptions = {
+                       closeButtonText: 'Cancel',
+                       actionButtonText: 'Ignore Changes',
+                       headerText: 'Unsaved Changes',
+                       bodyText: 'You have unsaved changes. Leave the page?'
+                   };
 
-               //    modalService.showModal({}, modalOptions).then(function (result) {
-               //        if (result === 'ok') {
-               //            return;
-               //        }
-               //    });
-               //}]
+                   modalService.showModal({}, modalOptions).then(function (result) {
+                       if (result === 'ok') {
+                           return $state.go('app');
+                       }
+                   });
+               }]
             }
         }
     });
@@ -40,11 +40,12 @@ app.config(function ($stateProvider, $stickyStateProvider, $urlRouterProvider) {
         template: '<h3>I\'m a substate in a modal'
     });
 
+
     $stateProvider.state('modal2', {
         url: '/modal2',
         views: {
             'modal2': {
-                templateUrl: 'pages/modal2.html'
+                templateUrl: 'pages/modal.html'
             }
         }
     });
