@@ -1,4 +1,4 @@
-﻿angular.module('plunk.service', [
+﻿angular.module('plunk.interceptor.service', [
 
 ])
 

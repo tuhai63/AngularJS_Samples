@@ -23,12 +23,14 @@
     <script src="script.js"></script>
     <script src="services/formServices.js"></script>
     <script src="services/modalService.js"></script>
+    <script src="services/utils-service.js"></script>
+    <script src="services/dataService.js"></script>
 </head>
 
 <body ng-app="plunk" style="padding-top: 2em;">
     <div ui-view="app"></div>
     <div ui-view="modal" class="modal"></div>
-    <div ui-view="modal2" class="modal"></div>
+    <!--<div ui-view="modal2" class="modal"></div>-->
     <state-vis style="position:relative; bottom: 0;"></state-vis>
     <div style="width: 100%; position:relative; top: 0;">
         <pre>Browser location: {{$location.absUrl()}}</pre>
@@ -42,7 +44,7 @@
     <script type="text/ng-template" id="app.html">
         <div>
             <a ui-sref="modal">Click for modal 1!</a>
-            <a ui-sref="modal2">Click for modal 2</a>
+            <!--<a ui-sref="modal2">Click for modal 2</a>-->
             <h3>Welcome to the app</h3>
             <a ui-sref=".account" ui-sref-active="selected">Account</a>
             <a ui-sref=".survey" ui-sref-active="selected">Survey</a>
