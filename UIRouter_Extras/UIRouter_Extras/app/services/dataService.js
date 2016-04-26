@@ -1,11 +1,11 @@
 ﻿angular.module('plunk.data.service', [])
 
 // A RESTful factory for retrieving contacts from 'contacts.json'
-.factory('usersData', ['$http', 'utils', function ($http, utils) {
+.factory('usersService', ['$http', 'utils', function ($http, utils) {
     var path = 'assets/data.json';
 
     var users = $http.get(path).then(function (resp) {
-      console.debug("my data " + resp.data.users[0].id);
+     // console.debug("my data " + resp.data.users[0].id);
         //console.debug(resp.data.submissions[0].submission_version_date);
         return resp.data.users;
     });

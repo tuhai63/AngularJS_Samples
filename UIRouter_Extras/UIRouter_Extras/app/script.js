@@ -84,28 +84,34 @@ app.config(function ($stateProvider, $stickyStateProvider, $urlRouterProvider) {
     $stateProvider.state('app.survey', {
         url: '/survey',
         templateUrl: 'pages/survey.html',
-        controller: ['$scope', '$stateParams', '$state','$uibModal', 'CheckStateChangeService','usersData', 'utils',
-               function ($scope,  $stateParams, $state, $uibModal, CheckStateChangeService, usersData, utils) { 
+        resolve: {
+            users: ['usersService', function (usersService) {
+                return usersService.all();
+              }]
+        },
+        // The  users key name from resolve is what gets injected into the controller.
+        controller: ['$scope', '$stateParams', '$state','$uibModal', 'CheckStateChangeService','users', 'utils',
+               function ($scope,  $stateParams, $state, $uibModal, CheckStateChangeService, users, utils) { 
                    $scope.feedback = "";
                    $scope.saved = false;
                    // Interceptor service
                    CheckStateChangeService.checkFormOnStateChange($scope);
                    
                    $scope.save = function () {
-                       $scope.saved = true;
-                        console.debug("$scope.feedback: " + $scope.feedback);             
+                       $scope.saved = true; 
                    };
-                   $scope.user = {
-                        firstname: 'Doo',
-                        lastname: 'Soobi'
-                   };
+                   //$scope.user = {
+                   //     firstname: 'Doo',
+                   //     lastname: 'Soobi'
+                   //};
+                   $scope.users = users;
                    // Test only
-                   $scope.item = utils.findById(usersData, "1");
-                   console.debug($scope.item);
+                   $scope.user = utils.findById($scope.users, "2");
+                   console.debug("Data service return a single user: " +JSON.stringify( $scope.user));
                    // open modal
                    $scope.open = function (user) {
                        //$scope.user = user;
-                       $uibModal.open({
+                       $uibModal.open ( {
                            templateUrl: 'pages/myModalContent.html',
                            backdrop: true,
                            windowClass: 'modal',
